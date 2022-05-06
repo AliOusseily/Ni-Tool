@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2022.1.412/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2022.1.412/styles/kendo.blueopal.min.css" />
+
+    <script src="https://kendo.cdn.telerik.com/2022.1.412/js/jquery.min.js"></script>
+    <script>
+        if (typeof jQuery == "undefined") {
+            document.write(decodeURIComponent('%3Cscript src="/path/to/local/jquery.min.js" %3E%3C/script%3E'));
+        }
+    </script>
+
+    <script src="https://kendo.cdn.telerik.com/2022.1.412/js/kendo.all.min.js"></script>
+    <script>
+        if (typeof kendo == "undefined") {
+            document.write(decodeURIComponent('%3Clink rel="stylesheet" href="/path/to/local/kendo.common.min.css" %3C/%3E'));
+            document.write(decodeURIComponent('%3Clink rel="stylesheet" href="/path/to/local/kendo.blueopal.min.css" %3C/%3E'));
+            document.write(decodeURIComponent('%3Cscript src="/path/to/local/kendo.all.min.js" %3E%3C/script%3E'));
+        }
+    </script>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <h1 id="test" style="color:aqua;">Ni-Tool</h1>
+    <input type="radio" id="hourlydata" name="data" value="FetchHourly" onchange="getValue(this)" checked>
+  <label for="hourlydata">Hourly Data</label><br>
+  <input type="radio" id="dailydata" name="data" onchange="getValue(this)" value="FetchDaily">
+  <label for="adult">Daily Data</label><br>
+
+  <div id="box">
+
+    <div id="startdate">
+
+      <label id="label1" for="start">Start date:</label>
+
+
+
+<input type="date" id="start" name="trip-start"
+
+       value="2018-07-22"
+
+       min="2018-01-01" max="2018-12-31">
+
+       <label id="label1" for="start">TO:</label>
+
+
+
+<input type="date" id="to" name="trip-start"
+
+       value="2018-07-22"
+
+       min="2018-01-01" max="2023-12-31">
+
+
+
+    </div>
+   <!-- <div id="radioValue"></div> -->
+    <div id="chart"></div>
+
+    <div id ="grid"></div>
+</body>
+</html>
