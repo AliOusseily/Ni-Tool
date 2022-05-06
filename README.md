@@ -1,4 +1,5 @@
 # Ni-Tool
+# create two files one named unparsed and one named parsed and move the raw file into the unparsed directory and the output parsed file will be generated in the parsed directory 
 # The project is built from one solution and 3 different apis in this solution (Aggregator,Parser,Loader)
 # the project should be cloned and the criteria of running the project is as following
 # open 3 power shells and go the path of the apis on each power shell respectively
